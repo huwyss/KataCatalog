@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataVeryLong", "KataVeryLong\KataVeryLong.csproj", "{03FFD091-1B41-487F-B8E3-BD9B011C57A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataVeryLongTest", "KataVeryLongTest\KataVeryLongTest.csproj", "{1E662C65-78CE-4978-900F-9157E83A0D34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03FFD091-1B41-487F-B8E3-BD9B011C57A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FFD091-1B41-487F-B8E3-BD9B011C57A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FFD091-1B41-487F-B8E3-BD9B011C57A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FFD091-1B41-487F-B8E3-BD9B011C57A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E662C65-78CE-4978-900F-9157E83A0D34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E662C65-78CE-4978-900F-9157E83A0D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E662C65-78CE-4978-900F-9157E83A0D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E662C65-78CE-4978-900F-9157E83A0D34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

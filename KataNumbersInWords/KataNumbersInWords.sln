@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataNumbersInWords", "KataNumbersInWords\KataNumbersInWords.csproj", "{54F6FBD6-8AB5-4CF2-B16F-B5242C6BDE96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersInWordsTest", "NumbersInWordsTest\NumbersInWordsTest.csproj", "{19B8F0D8-89EF-408C-B6E6-85D448EF469D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54F6FBD6-8AB5-4CF2-B16F-B5242C6BDE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F6FBD6-8AB5-4CF2-B16F-B5242C6BDE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F6FBD6-8AB5-4CF2-B16F-B5242C6BDE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F6FBD6-8AB5-4CF2-B16F-B5242C6BDE96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B8F0D8-89EF-408C-B6E6-85D448EF469D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B8F0D8-89EF-408C-B6E6-85D448EF469D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B8F0D8-89EF-408C-B6E6-85D448EF469D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B8F0D8-89EF-408C-B6E6-85D448EF469D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
