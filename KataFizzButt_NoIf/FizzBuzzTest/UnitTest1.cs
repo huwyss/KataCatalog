@@ -109,6 +109,20 @@ namespace FizzBuzzTest
             var fizzbuzzer = new FizzBuzzer();
             Assert.AreEqual("fizzbuzz", fizzbuzzer.Evaluate(15));
         }
+
+        [TestMethod]
+        public void FizzBuzzerTest_WhenInput12_ThenBuzz()
+        {
+            var fizzbuzzer = new FizzBuzzer();
+            Assert.AreEqual("fizz", fizzbuzzer.Evaluate(12));
+        }
+
+        [TestMethod]
+        public void FizzBuzzerTest_WhenInput11_ThenBuzz()
+        {
+            var fizzbuzzer = new FizzBuzzer();
+            Assert.AreEqual("11", fizzbuzzer.Evaluate(11));
+        }
     }
 
     
