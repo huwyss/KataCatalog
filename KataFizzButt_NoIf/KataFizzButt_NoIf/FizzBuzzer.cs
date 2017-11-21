@@ -8,7 +8,7 @@ namespace KataFizzButt_NoIf
 {
     public class FizzBuzzer
     {
-        RulesSet _rulesSet;
+        private readonly RulesSet _rulesSet;
 
         public FizzBuzzer()
         {

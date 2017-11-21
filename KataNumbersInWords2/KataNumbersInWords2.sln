@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataNumbersInWords2", "KataNumbersInWords2\KataNumbersInWords2.csproj", "{BA15B5FA-C17F-4EAC-9865-B10603EE7C7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersInWordsTest", "NumbersInWordsTest\NumbersInWordsTest.csproj", "{7D945AD0-60DB-49DA-9F54-933637919713}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA15B5FA-C17F-4EAC-9865-B10603EE7C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA15B5FA-C17F-4EAC-9865-B10603EE7C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA15B5FA-C17F-4EAC-9865-B10603EE7C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA15B5FA-C17F-4EAC-9865-B10603EE7C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D945AD0-60DB-49DA-9F54-933637919713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D945AD0-60DB-49DA-9F54-933637919713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D945AD0-60DB-49DA-9F54-933637919713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D945AD0-60DB-49DA-9F54-933637919713}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
