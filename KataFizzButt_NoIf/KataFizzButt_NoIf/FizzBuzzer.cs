@@ -13,6 +13,10 @@ namespace KataFizzButt_NoIf
         public FizzBuzzer()
         {
             _rulesSet = new RulesSet();
+            _rulesSet.AddRule(new CatchAllRule());
+            _rulesSet.AddRule(new FizzRule());
+            _rulesSet.AddRule(new BuzzRule());
+            _rulesSet.AddRule(new FizzBuzzRule());
         }
 
         public string Evaluate(int number)

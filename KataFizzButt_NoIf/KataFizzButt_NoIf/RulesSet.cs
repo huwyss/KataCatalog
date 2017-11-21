@@ -8,23 +8,17 @@ namespace KataFizzButt_NoIf
 {
     public class RulesSet 
     {
-        ChainElement _catchAllChainElement;
-        ChainElement _fizzRuleChainElement;
-        ChainElement _buzzRuleChainElement;
-        ChainElement _fizzBuzzRuleChainElement;
-
-        public RulesSet()
-        {
-            _catchAllChainElement = new ChainElement(new CatchAllRule(), null);
-            _fizzRuleChainElement = new ChainElement(new FizzRule(), _catchAllChainElement);
-            _buzzRuleChainElement = new ChainElement(new BuzzRule(), _fizzRuleChainElement);
-            _fizzBuzzRuleChainElement = new ChainElement(new FizzBuzzRule(), _buzzRuleChainElement);
-        }
+        ChainElement _firstRuleElement = null;
 
         public string ApplyRules(int number)
         {
-            string result = _fizzBuzzRuleChainElement.Handle(number);
+            string result = _firstRuleElement.Handle(number);
             return result;
+        }
+
+        public void AddRule(IRule rule)
+        {
+            _firstRuleElement = new ChainElement(rule, _firstRuleElement);
         }
     }
 }
