@@ -8,7 +8,7 @@ namespace KataFizzButt_NoIf
 {
     public class FizzBuzzer
     {
-        private Handler firstHandler = null;
+        private Handler _firstHandler = null;
 
         public FizzBuzzer()
         {
@@ -20,13 +20,13 @@ namespace KataFizzButt_NoIf
 
         private void AddHandler(Handler previousHandler)
         {
-            previousHandler.SetNextHandler(firstHandler);
-            firstHandler = previousHandler;
+            previousHandler.SetNextHandler(_firstHandler);
+            _firstHandler = previousHandler;
         }
 
         public string Evaluate(int number)
         {
-            return firstHandler.HandleRequest(number);
+            return _firstHandler.HandleRequest(number);
         }
     }
 }

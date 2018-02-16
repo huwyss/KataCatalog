@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChainElement.cs" />
     <Compile Include="CatchAllHandler.cs" />
     <Compile Include="FizzBuzzer.cs" />
     <Compile Include="BuzzHandler.cs" />
@@ -53,7 +52,6 @@
     <Compile Include="IRule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RulesEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
