@@ -8,21 +8,25 @@ namespace KataFizzButt_NoIf
 {
     public class FizzBuzzer
     {
-        private readonly RulesSet _rulesSet;
+        private Handler firstHandler = null;
 
         public FizzBuzzer()
         {
-            _rulesSet = new RulesSet();
-            _rulesSet.AddRule(new CatchAllRule());
-            _rulesSet.AddRule(new FizzRule());
-            _rulesSet.AddRule(new BuzzRule());
-            _rulesSet.AddRule(new FizzBuzzRule());
+            AddHandler(new CatchAllHandler());
+            AddHandler(new BuzzHandler());
+            AddHandler(new FizzHandler());
+            AddHandler(new FizzBuzzHandler());
+        }
+
+        private void AddHandler(Handler previousHandler)
+        {
+            previousHandler.SetNextHandler(firstHandler);
+            firstHandler = previousHandler;
         }
 
         public string Evaluate(int number)
         {
-            string result = _rulesSet.ApplyRules(number);
-            return result;
+            return firstHandler.HandleRequest(number);
         }
     }
 }

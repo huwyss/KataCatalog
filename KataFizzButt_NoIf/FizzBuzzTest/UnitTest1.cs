@@ -14,28 +14,28 @@ namespace FizzBuzzTest
         [TestMethod]
         public void RulesTest_WhenNumber3_ThenFizzRuleDoesApply()
         {
-            var fizzRule = new FizzRule();
+            var fizzRule = new FizzHandler();
             Assert.IsTrue(fizzRule.DoesApply(3));
         }
 
         [TestMethod]
         public void RulesTest_WhenNumber6_ThenFizzRuleDoesApply()
         {
-            var fizzRule = new FizzRule();
+            var fizzRule = new FizzHandler();
             Assert.IsTrue(fizzRule.DoesApply(6));
         }
 
         [TestMethod]
         public void RulesTest_WhenNumber4_ThenFizzRuleDoesNotApply()
         {
-            var fizzRule = new FizzRule();
+            var fizzRule = new FizzHandler();
             Assert.IsFalse(fizzRule.DoesApply(4));
         }
 
         [TestMethod]
         public void RulesTest_WhenFizzAplied_ThenFizz()
         {
-            var fizzRule = new FizzRule();
+            var fizzRule = new FizzHandler();
             Assert.AreEqual("fizz", fizzRule.Apply(3));
         }
 
@@ -46,35 +46,35 @@ namespace FizzBuzzTest
         [TestMethod]
         public void RulesTest_WhenNumber5_ThenBuzzRuleDoesApply()
         {
-            var buzzRule = new BuzzRule();
+            var buzzRule = new BuzzHandler();
             Assert.IsTrue(buzzRule.DoesApply(5));
         }
 
         [TestMethod]
         public void RulesTest_WhenNumber10_ThenBuzzRuleDoesApply()
         {
-            var buzzRule = new BuzzRule();
+            var buzzRule = new BuzzHandler();
             Assert.IsTrue(buzzRule.DoesApply(10));
         }
 
         [TestMethod]
         public void RulesTest_WhenNumber6_ThenBuzzRuleDoesNotApply()
         {
-            var buzzRule = new BuzzRule();
+            var buzzRule = new BuzzHandler();
             Assert.IsFalse(buzzRule.DoesApply(6));
         }
 
         [TestMethod]
         public void RulesTest_WhenBuzzAplied_ThenBuzz()
         {
-            var buzzRule = new BuzzRule();
+            var buzzRule = new BuzzHandler();
             Assert.AreEqual("buzz", buzzRule.Apply(5));
         }
 
         [TestMethod]
         public void RulesTest_WhenCatchallAlwaysApplies()
         {
-            var catchallRule = new CatchAllRule();
+            var catchallRule = new CatchAllHandler();
             Assert.IsTrue(catchallRule.DoesApply(4));
         }
 

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace KataFizzButt_NoIf
 {
-    public class BuzzRule : IRule
+    public class BuzzHandler : Handler, IRule
     {
-        public bool DoesApply(int number)
+        public override bool DoesApply(int number)
         {
             return number % 5 == 0;
         }
 
-        public string Apply(int number)
+        public override string Apply(int number)
         {
             return "buzz";
         }
