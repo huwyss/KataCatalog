@@ -9,17 +9,17 @@ namespace KataFizzButt_NoIf
     public class ChainElement
     {
         IRule _rule;
-        ChainElement NextChainElement;
+        ChainElement _nextChainElement;
 
         public ChainElement(IRule rule, ChainElement nextChainRuleElement)
         {
             _rule = rule;
-            NextChainElement = nextChainRuleElement;
+            _nextChainElement = nextChainRuleElement;
         }
 
         public string Handle(int number)
         {
-            return _rule.DoesApply(number) ? _rule.Apply(number) : NextChainElement.Handle(number);
+            return _rule.DoesApply(number) ? _rule.Apply(number) : _nextChainElement.Handle(number);
         }
     }
 }
